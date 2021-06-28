@@ -5,9 +5,6 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
- @import url(superslides.css);
-
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -11044,6 +11041,7 @@ h1, h2, h3, h4, h5,
   position: relative;
   text-transform: uppercase;
 }
+
 .hero-wrap {
   width: 100%;
   background-size: cover;
@@ -11322,6 +11320,10 @@ h1, h2, h3, h4, h5,
     padding: 6em 0;
   }
 }
+.ftco-section .left-col h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
 .ftco-section .product-search {
   position: relative;
   width: 100%;
@@ -11396,102 +11398,6 @@ h1, h2, h3, h4, h5,
   font-weight: 500;
   text-transform: uppercase;
   color: #fff;
-}
-
-.filter-price-left{
-  margin-bottom: 20px;
-}
-
-.title-left{
-  font-size: 16px;
-  border-bottom: 3px solid #000000;
-  margin-bottom: 20px;
-}
-.title-left h3{
-  font-weight: 500;
-}
-
-.price-box-slider p{
-  clear: both;
-  margin-top: 20px;
-  display: inline-block;
-  width: 100%;
-}
-.price-box-slider p input{
-  margin-top: 5px;
-}
-.price-box-slider p button{
-  border: none;
-  color: #ffffff;
-  float: right;
-}
-
-#slider-range .ui-slider-handle {
-  background-color: #009A4E;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 21px;
-  top: -6px;
-  transition: none 0s ease 0s;
-  width: 21px;
-  box-shadow: 0px 0px 6.65px 0.35px rgba(0,0,0,0.15);
-}
-#slider-range .ui-slider-range {
-  background-color: #009A4E;
-  border-radius: 0;
-}
-#slider-range {
-  background: #000000;
-  border: medium none;
-  border-radius: 50px;
-  float: left;
-  height: 10px;
-  margin-top: 14px;
-  width: 100%;
-}
-
-.hvr-hover{
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  background: #009A4E;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  border-radius: 0;
-  box-shadow: none;
-}
-.hvr-hover::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #fff;
-  border-radius: 100%;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-hover:hover::after{
-  -webkit-transform: scale(2);
-  transform: scale(2);
-  color: #ffffff;
-}
-.hvr-hover{
-  overflow: hidden;
 }
 
 .product {
@@ -12056,4 +11962,19 @@ h1, h2, h3, h4, h5,
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+.price-range {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.well {
+  background-color: #FFFFFF;
+  border: 1px solid #F7F7F0;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 20px;
+  min-height: 20px;
+  padding: 35px;
 }

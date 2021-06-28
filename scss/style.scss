@@ -1,6 +1,7 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
 
+
 $font-primary: 'Montserrat', serif;
 
 $white: #fff;
@@ -27,9 +28,9 @@ $secondary: #57e79f;
     transition:         all $transition ease;
 }
 
-html {
-	// overflow-x: hidden;
-}
+// html {
+// 	// overflow-x: hidden;
+// }
 body {
 	font-family: $font-primary;
 	background: $white;
@@ -536,9 +537,7 @@ h1, h2, h3, h4, h5,
 	font-weight: 700;
 	font-size: 24px;
 	position: relative;
-	text-transform: uppercase;
-	span{
-	}
+	text-transform: uppercase;	
 }
 
 .hero-wrap{
@@ -821,6 +820,12 @@ h1, h2, h3, h4, h5,
 	@include media-breakpoint-down(sm){
 		padding: 6em 0;
 	}
+	.left-col{
+		h5{
+			font-size: 16px;
+			font-weight: 600;
+		}
+	}
 	.product-search {
 		position: relative;
 		width: 100%;
@@ -1038,7 +1043,7 @@ h1, h2, h3, h4, h5,
 		background: transparent;
 		padding: 0 15px;
 	}
-	button,.form-control{;
+	button,.form-control{
 		height: 40px !important;
 		text-align: center;
 		border: 1px solid rgba(0,0,0,.1) !important;
@@ -1458,4 +1463,19 @@ h1, h2, h3, h4, h5,
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+
+.price-range{
+	margin-top:30px;
+	text-align: center;
+  }
+
+.well {
+	background-color: #FFFFFF;
+	border: 1px solid #F7F7F0;
+	border-radius: 4px;
+	box-shadow: none;
+	margin-bottom: 20px;
+	min-height: 20px;
+	padding: 35px;
 }

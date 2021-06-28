@@ -9,11 +9,14 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <link rel="stylesheet" href="css/animate.css">
         
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="css/animate.css">        
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/owl.theme.default.min.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/price-range.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
         
@@ -115,31 +118,28 @@
 			<div class="container">
 				<div class="row">
                     <div class="col-md-3">
-						<div class="sidebar-box ftco-animate">
-                            <div class="categories">
-                                <h3>Product Types</h3>
-                                <ul class="p-0">
-                                    <li><a href="#">Brandy <span class="fa fa-chevron-right"></span></a></li>
-                                    <li><a href="#">Gin <span class="fa fa-chevron-right"></span></a></li>
-                                    <li><a href="#">Rum <span class="fa fa-chevron-right"></span></a></li>
-                                    <li><a href="#">Tequila <span class="fa fa-chevron-right"></span></a></li>
-                                    <li><a href="#">Vodka <span class="fa fa-chevron-right"></span></a></li>
-                                    <li><a href="#">Whiskey <span class="fa fa-chevron-right"></span></a></li>
-                                </ul>
-                            </div>
-                        </div> 
-						<div class="filter-price-left">
-                            <div class="title-left">
-                                <h3>Filter by Price</h3>
-                            </div>
-                            <div class="price-box-slider">
-                                <div id="slider-range"></div>
-                                <p>
-                                    <input type="text" id="amount" readonly style="border:0; color:#009A4E; font-weight:bold;">
-                                    <button class="btn hvr-hover" type="submit">Filter</button>
-                                </p>
-                            </div>
-                        </div>                       
+						<div class="left-col">
+							<div class="sidebar-box ftco-animate">
+								<div class="categories">
+									<h5>PRODUCT TYPES</h5>
+									<ul class="p-0">
+										<li><a href="#">Brandy <span class="fa fa-chevron-right"></span></a></li>
+										<li><a href="#">Gin <span class="fa fa-chevron-right"></span></a></li>
+										<li><a href="#">Rum <span class="fa fa-chevron-right"></span></a></li>
+										<li><a href="#">Tequila <span class="fa fa-chevron-right"></span></a></li>
+										<li><a href="#">Vodka <span class="fa fa-chevron-right"></span></a></li>
+										<li><a href="#">Whiskey <span class="fa fa-chevron-right"></span></a></li>
+									</ul>
+								</div>
+							</div> 
+							<div class="price-range"><!--price-range-->
+								<h5>FILTER BY PRICE</h5>
+								<div class="well">
+									<input type="text" class="span2" value="" data-slider-min="0" data-slider-max="10000" data-slider-step="5" data-slider-value="[2000,5000]" id="sl2" ><br />
+									<b>₦ 0</b> <b class="pull-right">₦ 10000</b>
+								</div>
+							</div><!--/price-range-->                       
+						</div>
 					</div>					
 					<div class="col-md-9">
 						<div class="row mb-4">
@@ -503,6 +503,7 @@
         <script src="js/google-map.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 		<script src="js/jquery-ui.js"></script>
+		<script src="js/price-range.js"></script>
         <script src="js/main.js"></script>
 
     </body>

@@ -14,39 +14,37 @@
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/owl.theme.default.min.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="vendor/aos/aos.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
         
         <link rel="stylesheet" href="css/flaticon.css">
         <link rel="stylesheet" href="css/style.css">
+        
     </head>
 
     <body>
-        <div class="wrap">
-			<div class="container">
-				<div class="row">
-                    <div class="col-md-6 d-flex align-items-center">
-                        <p class="mb-0 phone pl-md-2">
-                            <a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
-                            <a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
-                        </p>
-                    </div>
-                    <div class="col-md-6 d-flex justify-content-md-end">
-                        <div class="social-media mr-4">
-                            <p class="mb-0 d-flex">
-                                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-                                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-                                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-                                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
-                            </p>
-                        </div>                    
-                        <div class="reg">
-                            <p class="mb-0"><a href="#" class="mr-2">Sign Up</a> <a href="#">Log In</a></p>
-                        </div>  
-                    </div>                      
-				</div>
-			</div>
-		</div>
+      <div class="wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 d-flex align-items-center">
+              <p class="mb-0 phone pl-md-2">
+                <a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
+                <a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
+              </p>
+            </div>
+            <div class="col-sm-8 d-flex justify-content-md-end">   									                   
+                <div class="reg">
+                  <p class="mb-0">								
+                    <a href="#" class="mr-4"><i class="fa fa-user"></i> <span class="pl-1">Account</span></a>							
+                    <!-- <a href="cart.html" class="mr-4"><i class="fa fa-shopping-cart"></i> <span class="pl-1">Cart</span></a> -->
+                    <a href="login.html"><i class="fa fa-lock"></i> <span class="pl-1">Login</span></a>
+                  </p>
+                </div>  
+            </div>                      
+          </div>
+        </div>
+       </div> 
 
         <!-- Start nav -->
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -54,8 +52,8 @@
                 <a class="navbar-brand" href="index.html">AFJ <span>Farms</span></a>
                 <div class="order-lg-last btn-group">
                     <a href="#" class="btn-cart dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="flaticon-shopping-bag"></span>
-                        <div class="d-flex justify-content-center align-items-center"><small>3</small></div>
+                        <i class="fa fa-shopping-basket"></i>
+                        <div class="d-flex align-items-center"><small>3</small></div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <div class="dropdown-item d-flex align-items-start" href="#">
@@ -92,16 +90,24 @@
     
                 <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="product.html" class="nav-link">Products</a></li>                       
+                        <li class="nav-item">
+                          <a href="index.html" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="product.html" class="nav-link">Products</a>
+                        </li>                       
                         <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
-                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item">
+                          <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- END nav -->
+        <!-- END nav -->              
 
         <div class="hero-wrap" style="background-image: url('images/hero-bg.jpg');" data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
@@ -117,8 +123,281 @@
                 </div>
         </div>
 
+        <!-- ======= About Section ======= -->
+        <section id="about">
+            <div class="container" data-aos="fade-up" data-aos-delay="200">
+                <div class="row about-container">
+        
+                    <div class="col-lg-6 content order-lg-1 order-2">
+                        <h2 class="title">WHO WE ARE</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+            
+                        <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+                            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+                            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                        </div>
+            
+                        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon"><i class="fa fa-photo"></i></div>
+                            <h4 class="title"><a href="">Magni Dolores</a></h4>
+                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </div>
+            
+                        <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon"><i class="fa fa-bar-chart"></i></div>
+                            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+                            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                        </div>
+        
+                    </div>            
+                    <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"></div>
+                </div>
+    
+            </div>
+        </section><!-- End About Section -->
+
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us py-5 mb-5">
+          <div class="container">
+
+            <div class="row">
+
+              <div class="col-lg-3" data-aos="fade-up">
+                <div class="box">
+                  <span>01</span>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
+                <div class="box">
+                  <span>02</span>
+                  <h4>Repellat Nihil</h4>
+                  <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                <div class="box">
+                  <span>03</span>
+                  <h4> Ad ad velit qui</h4>
+                  <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                <div class="box">
+                  <span>03</span>
+                  <h4> Ad ad velit qui</h4>
+                  <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section><!-- End Why Us Section -->
+
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
+          <div class="container" data-aos="zoom-in">
+
+            <div class="text-center">
+              <h3>Call To Action</h3>
+              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="cta-btn" href="#">Call To Action</a>
+            </div>
+
+          </div>
+        </section><!-- End Cta Section -->        
+
+        <!-- gallery section start -->
+        <section class="gallery-section layout_padding">
+          <div class="container">
+            <div class="heading-container">
+              <hr>
+              <h2>
+                Our Gallery
+              </h2>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="gallery-container" data-aos="zoom-in">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="box">
+                    <img src="images/agriculture-1807549_1920.jpg" alt="">
+                    <div class="link-box">
+                      <h5>
+                        Orange
+                      </h5>
+                      <!-- <a href="">
+                        Buy Now
+                      </a> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="box">
+                    <img src="images/natalie-rhea-vZUTCqLYR7g-unsplash.jpg" alt="">
+                    <div class="link-box">
+                      <h5>
+                        Blueberry
+                      </h5>
+                      <!-- <a href="">
+                        Buy Now
+                      </a> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="box">
+                    <img src="images/artem-beliaikin-Mpm69Pad_-8-unsplash.jpg" alt="">
+                    <div class="link-box">
+                      <h5>
+                        Banana
+                      </h5>
+                      <!-- <a href="">
+                        Buy Now
+                      </a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="box">
+                    <img src="images/jason-leung-Gky4wYp9mvg-unsplash.jpg" alt="">
+                    <div class="link-box">
+                      <h5>
+                        Apple
+                      </h5>
+                      <!-- <a href="">
+                        Buy Now
+                      </a> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="box">
+                    <img src="images/katherine-chase-BzF1XBy5xOc-unsplash.jpg" alt="">
+                    <div class="link-box">
+                      <h5>
+                        Mango
+                      </h5>
+                      <!-- <a href="">
+                        Buy Now
+                      </a> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="box">
+                    <img src="images/thomas-iversen-4W8FgDVyUME-unsplash.jpg" alt="">
+                    <div class="link-box">
+                      <h5>
+                        Strawberry
+                      </h5>
+                      <!-- <a href="">
+                        Buy Now
+                      </a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>        
+        <!-- gallery section end -->
+
+        <footer class="ftco-footer">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-sm-12 col-md">
+                <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2 logo"><a href="#">AFJ <span>FARMS</span></a></h2>
+                  <p>Far far away, behind the word mountains, far from the countries.</p>
+                  <ul class="ftco-footer-social list-unstyled mt-2">
+                    <li class="ftco-animate"><a href="#"><span class="fa fa-facebook text-white"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="fa fa-instagram text-white"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md">
+                <div class="ftco-footer-widget mb-4 ml-md-4">
+                  <h2 class="ftco-heading-2">My Accounts</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>My Account</a></li>
+                    <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Register</a></li>
+                    <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Log In</a></li>
+                    <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>My Order</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md">
+                <div class="ftco-footer-widget mb-4 ml-md-4">
+                  <h2 class="ftco-heading-2">Information</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About us</a></li>
+                    <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Catalog</a></li>
+                    <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact us</a></li>
+                    <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md">
+                <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2">Quick Link</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>New User</a></li>
+                    <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Help Center</a></li>
+                    <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Report Spam</a></li>
+                    <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Faq's</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md">
+                <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2">Have a Questions?</h2>
+                  <div class="block-23 mb-3">
+                    <ul>
+                      <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                      <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                      <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid px-0 py-5 bg-black">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+              
+                  <p class="mb-0" style="color: rgba(255,255,255,.5);"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Design by <a href="https://luday.se/" target="_blank">Luday</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+              </div>
+            </div>
+          </div>
+		    </footer>
+
+        <div id="preloader"></div>
+
         <!-- loader -->
-        <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+        <!-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div> -->
 
 
         <script src="js/jquery.min.js"></script>
@@ -135,6 +414,7 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
         <script src="js/google-map.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+        <script src="vendor/aos/aos.js"></script>
         <script src="js/main.js"></script>
     </body>
 

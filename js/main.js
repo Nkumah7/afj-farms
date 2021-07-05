@@ -1,14 +1,15 @@
-/*price range*/
-
-$('#sl2').slider();
-
-var RGBChange = function() {
-  $('#RGB').css('background', 'rgb('+r.getValue()+','+g.getValue()+','+b.getValue()+')')
-};	
-
 (function($) {
 
 	"use strict";
+
+	// Preloader
+	$(window).on('load', function() {
+		if ($('#preloader').length) {
+		  $('#preloader').delay(100).fadeOut('slow', function() {
+			$(this).remove();
+		  });
+		}
+	});
 
 	$(window).stellar({
     responsive: true,
@@ -17,8 +18,18 @@ var RGBChange = function() {
     horizontalScrolling: false,
     hideDistantElements: false,
     scrollProperty: 'scroll'
-  });
-
+  });  
+	
+  	// Init AOS
+  function aos_init() {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }
+  $(window).on('load', function() {
+    aos_init();
+  });  
 
 	var fullHeight = function() {
 
@@ -31,14 +42,14 @@ var RGBChange = function() {
 	fullHeight();
 
 	// loader
-	var loader = function() {
-		setTimeout(function() { 
-			if($('#ftco-loader').length > 0) {
-				$('#ftco-loader').removeClass('show');
-			}
-		}, 1);
-	};
-	loader();
+	// var loader = function() {
+	// 	setTimeout(function() { 
+	// 		if($('#ftco-loader').length > 0) {
+	// 			$('#ftco-loader').removeClass('show');
+	// 		}
+	// 	}, 1);
+	// };
+	// loader();
 
 	var carousel = function() {
 		$('.carousel-testimony').owlCarousel({
@@ -193,6 +204,14 @@ var RGBChange = function() {
 		} , { offset: '95%' } );
 	};
 	contentWayPoint();
+
+	/*price range*/
+
+	$('#sl2').slider();
+
+	var RGBChange = function() {
+	$('#RGB').css('background', 'rgb('+r.getValue()+','+g.getValue()+','+b.getValue()+')')
+	};	
 
 	/* ..............................................
 	   Slider Range

@@ -10838,6 +10838,7 @@ h1, h2, h3, h4, h5,
   border: none;
 }
 .ftco-navbar-light .btn-group .dropdown-menu .dropdown-item .img {
+  background-size: cover;
   width: 60px;
   height: 60px;
   position: relative;
@@ -11331,44 +11332,24 @@ h1, h2, h3, h4, h5,
   outline: none;
 }
 .btn.btn-primary {
-  background: #009A4E !important;
-  border: 1px solid #009A4E !important;
-  color: #fff !important;
-}
-.btn.btn-primary:hover {
-  border: 1px solid #009A4E;
-  background: transparent;
-  color: #009A4E;
-}
-.btn.btn-primary.btn-outline-primary {
-  border: 1px solid #009A4E;
-  background: transparent;
-  color: #009A4E;
-}
-.btn.btn-primary.btn-outline-primary:hover {
-  border: 1px solid transparent;
   background: #009A4E;
+  border: 1px solid #009A4E;
   color: #fff;
 }
-.btn.btn-white {
-  background: #fff !important;
-  border: 1px solid #fff !important;
-  color: #000000 !important;
+.btn.btn-primary:hover {
+  border: 1px solid #cc1616;
+  background: #cc1616;
+  color: #fff;
 }
-.btn.btn-white:hover {
+.btn.btn-red {
+  background: #cc1616;
+  border: 1px solid #cc1616;
+  color: #fff;
+}
+.btn.btn-red:hover {
   border: 1px solid #009A4E;
-  background: transparent;
-  color: #009A4E;
-}
-.btn.btn-white.btn-outline-white {
-  border: 1px solid white !important;
-  background: transparent !important;
-  color: #fff !important;
-}
-.btn.btn-white.btn-outline-white:hover {
-  border: 1px solid #009A4E !important;
-  background: #009A4E !important;
-  color: #fff !important;
+  background: #009A4E;
+  color: #fff;
 }
 
 .ftco-section {
@@ -11488,42 +11469,6 @@ h1, h2, h3, h4, h5,
   font-weight: 300;
 }
 
-.ftco-intro {
-  background: #009A4E;
-}
-.ftco-intro .intro {
-  z-index: 0;
-  position: relative;
-}
-
-.intro {
-  width: 100%;
-  background: #009A4E;
-  padding: 30px;
-}
-.intro.color-1 {
-  background: #008b46;
-}
-.intro.color-2 {
-  background: #008141;
-}
-.intro .icon {
-  margin-right: 20px;
-}
-.intro .icon span {
-  font-size: 60px;
-  color: #fff;
-}
-.intro .text {
-  color: rgba(255, 255, 255, 0.8);
-}
-.intro .text h2 {
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #fff;
-}
-
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
@@ -11598,6 +11543,42 @@ h1, h2, h3, h4, h5,
   color: #111;
 }
 
+.ftco-intro {
+  background: #009A4E;
+}
+.ftco-intro .intro {
+  z-index: 0;
+  position: relative;
+}
+
+.intro {
+  width: 100%;
+  background: #009A4E;
+  padding: 30px;
+}
+.intro.color-1 {
+  background: #008b46;
+}
+.intro.color-2 {
+  background: #008141;
+}
+.intro .icon {
+  margin-right: 20px;
+}
+.intro .icon span {
+  font-size: 60px;
+  color: #fff;
+}
+.intro .text {
+  color: rgba(255, 255, 255, 0.8);
+}
+.intro .text h2 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .product {
   width: 100%;
   display: block;
@@ -11613,6 +11594,7 @@ h1, h2, h3, h4, h5,
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   z-index: 0;
+  background-size: cover;
 }
 .product .img:after {
   z-index: -1;
@@ -11633,13 +11615,38 @@ h1, h2, h3, h4, h5,
   transition: all 0.3s ease;
   opacity: 0;
 }
-.product .img .desc .meta-prod a {
+.product .img .desc .meta-prod .icon1 {
   margin: 0 2px;
-  width: 60px;
-  height: 60px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 40px;
+  height: 40px;
+  border: 1px solid #009A4E;
+  border-radius: 50%;
+  background: #009A4E;
 }
-.product .img .desc .meta-prod a span {
+.product .img .desc .meta-prod .icon1:hover {
+  background: #cc1616;
+  border: #cc1616;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+.product .img .desc .meta-prod .icon1 span {
+  color: #fff;
+}
+.product .img .desc .meta-prod .icon2 {
+  margin: 0 2px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #009A4E;
+  border-radius: 50%;
+  background: #009A4E;
+}
+.product .img .desc .meta-prod .icon2:hover {
+  background: #cc1616;
+  border: #cc1616;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+.product .img .desc .meta-prod .icon2 span {
   color: #fff;
 }
 .product .text {
@@ -11955,7 +11962,7 @@ h1, h2, h3, h4, h5,
 }
 .ftco-footer-social li a:hover {
   color: #fff;
-  background: #57e79f;
+  background: #cc1616;
 }
 
 .footer-small-nav > li {
@@ -12622,4 +12629,43 @@ h1, h2, h3, h4, h5,
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+.map-section {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  width: 100%;
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  padding: 30px;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+.back-to-top i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #009A4E;
+  color: #fff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.back-to-top i:hover {
+  background: #cc1616;
+  color: #fff;
 }
